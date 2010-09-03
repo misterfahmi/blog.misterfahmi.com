@@ -1,0 +1,23 @@
+{% extends "skeleton/_base.html" %}
+{% block title %}{{site.name}}{% endblock %}
+{% block content %}
+{% comment %}{% block breadcrumbs %}{% include "skeleton/_breadcrumbs.html"%}{% endblock %}{% endcomment %}
+{% block nav %}
+<div class="secondary"> 
+    <p class="small">by Michael Biven - a systems administrator in the San Francisco Bay Area and former fire fighter. Read more on <a href ="http://michaelbiven.tumblr.com/">Tumblr</a> or <a href="http://twitter.com/michaelbiven/">@michaelbiven</a>.</p> 
+</div> 
+ 
+<div class="recents"> 
+    <h3>Recent Posts</h3> 
+    <ul> 
+        <li><a href='/writing/post/what_we_have_been_waiting_for/'>What We Have Been Waiting For</a></li> 
+        <li><a href='/writing/post/attention_falls/'>Attention Falls</a></li> 
+        <li><a href='/writing/post/homebrew_packages_for_mac_os/'>Homebrew package management for Mac OS</a></li> 
+        <li><a href='/writing/post/reblog-repost-but-no-credit/'>Reblog, Repost, But No Credit?</a></li> 
+        <li><a href='/writing/post/hornet-plus-three/'>Hornet Plus Three</a></li> 
+    </ul> 
+</div>
+{% endblock %}
+{% block content_header %}{% ifnotequal page.module site.module %}<div class="article title"><h3>{{ page.title }}</h3></div>{% endifnotequal %}{% endblock %}
+{% block content_body %}{% endblock %}
+{% endblock %}

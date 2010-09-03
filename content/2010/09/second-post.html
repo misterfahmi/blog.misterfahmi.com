@@ -1,0 +1,26 @@
+{% extends "_post.html" %}
+
+{% hyde
+    title: "Mercurial Workflows: Translation Branches"
+    snip: "Uncommon but useful."
+    created: 2010-06-11 08:15:00
+    categories: ["programming"]
+%}
+
+{% block article_class %}with-diagrams{% endblock %}
+
+{% block article %}
+
+This entry is the third in my series describing various [Mercurial][] workflows.
+The [first][branch-as-needed] describes the simplest one: branching only when
+necessary, and the [second][default-and-stable] describes the classic "default
+and stable" workflow.
+
+I've been experimenting with another workflow lately and it's proven itself to
+be pretty useful, so I wanted to write about it.
+
+[Mercurial]: {{ links.mercurial }}
+[branch-as-needed]: /blog/2010/02/mercurial-workflows-branch-as-needed/
+[default-and-stable]: /blog/2010/05/mercurial-workflows-stable-default/
+
+{% endblock %}
